@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A351DBC824B5D1D5007F5D1B /* MyColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351DBC724B5D1D5007F5D1B /* MyColor.swift */; };
+		A351DBCA24B5D1F4007F5D1B /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A351DBC924B5D1F4007F5D1B /* Media.xcassets */; };
 		A3A3478424B5C86B00D65A45 /* MyColors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A3477A24B5C86B00D65A45 /* MyColors.framework */; };
 		A3A3478924B5C86B00D65A45 /* MyColorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A3478824B5C86B00D65A45 /* MyColorsTests.swift */; };
 		A3A3478B24B5C86B00D65A45 /* MyColors.h in Headers */ = {isa = PBXBuildFile; fileRef = A3A3477D24B5C86B00D65A45 /* MyColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +25,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A351DBC724B5D1D5007F5D1B /* MyColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColor.swift; sourceTree = "<group>"; };
+		A351DBC924B5D1F4007F5D1B /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		A3A3477A24B5C86B00D65A45 /* MyColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A3477D24B5C86B00D65A45 /* MyColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyColors.h; sourceTree = "<group>"; };
 		A3A3477E24B5C86B00D65A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 			children = (
 				A3A3477D24B5C86B00D65A45 /* MyColors.h */,
 				A3A3477E24B5C86B00D65A45 /* Info.plist */,
+				A351DBC724B5D1D5007F5D1B /* MyColor.swift */,
+				A351DBC924B5D1F4007F5D1B /* Media.xcassets */,
 			);
 			path = MyColors;
 			sourceTree = "<group>";
@@ -148,6 +154,7 @@
 				TargetAttributes = {
 					A3A3477924B5C86B00D65A45 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 					A3A3478224B5C86B00D65A45 = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -178,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A351DBCA24B5D1F4007F5D1B /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A351DBC824B5D1D5007F5D1B /* MyColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +349,7 @@
 		A3A3478F24B5C86B00D65A45 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,6 +365,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sn.MyColors;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +374,7 @@
 		A3A3479024B5C86B00D65A45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,6 +398,7 @@
 		A3A3479224B5C86B00D65A45 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyColorsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +416,7 @@
 		A3A3479324B5C86B00D65A45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyColorsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
