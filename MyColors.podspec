@@ -17,17 +17,16 @@ Pod::Spec.new do |spec|
 
   spec.name         = "MyColors"
   spec.version      = "0.0.1"
-  spec.summary      = "A short description of MyColors."
+  spec.summary      = "App colors provider"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = <<-DESC
-                   DESC
+  spec.description  = "This pod will provide common colors for app."
 
-  spec.homepage     = "http://EXAMPLE/MyColors"
+  spec.homepage     = "https://github.com/shailshnailwal156/MyColors"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -79,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/MyColors.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/shailshnailwal156/MyColors.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,10 +89,10 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "MyColors", "MyColors/**/*.{h,m,swift,xcassets,json}"
+  #spec.exclude_files = "Classes/Exclude"
 
-  # spec.public_header_files = "Classes/**/*.h"
+  # spec.public_header_files = "MyColors/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
