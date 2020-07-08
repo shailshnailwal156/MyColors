@@ -89,7 +89,9 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "MyColors", "MyColors/**/*.{h,m,swift,xcassets,json}"
+  spec.source_files  = "MyColors", "MyColors/**/*.{h,m,swift,xcassets}"
+  spec.source_files  = "MyColors", "MyColors/**/**/*.{h,m,swift,xcassets}"
+  spec.source_files  = "MyColors", "MyColors/**/**/**/*.{h,m,swift,xcassets}"
   #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "MyColors/**/*.h"
